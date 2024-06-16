@@ -21,4 +21,10 @@ public class TestController {
     public String getMessage2() {
         return "Second message 2 from AWS Ecs";
     }
+    
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "OK";
+    }
+
 }
