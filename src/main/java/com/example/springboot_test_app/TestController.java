@@ -27,4 +27,9 @@ public class TestController {
         return "OK";
     }
 
+    @GetMapping("/test")
+    public String testMessage() {
+        return "test message for path";
+    }
+
 }
